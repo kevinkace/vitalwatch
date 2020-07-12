@@ -1,1 +1,1 @@
-![Vital Watch](src/images/vitalWatch-logo.svg?raw=true)
+![Vital Watch](src/images/vitalWatch-logo-fill.svg?raw=true)
