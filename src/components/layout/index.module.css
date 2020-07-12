@@ -1,0 +1,23 @@
+@import '../../css/global.module.css';
+
+@value lg, mqMinLg from '../../css/mq.module.css';
+
+html {
+  background: #111;
+  color: #fff;
+}
+
+a {
+  color: #a798d3;
+}
+
+.content {
+  max-width: lg;
+  margin: 0 auto;
+  padding: 0 4%;
+
+  @media mqMinLg {
+    padding: 0;
+  }
+
+}
