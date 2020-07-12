@@ -1,0 +1,11 @@
+.intro {
+    composes: bottomBorder from '../components/layout/index.module.css';
+
+    padding: 1em 0;
+
+    font-size: 1.2em;
+}
+
+.section {
+    margin-bottom: 3em;
+}
