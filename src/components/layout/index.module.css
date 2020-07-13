@@ -1,19 +1,8 @@
 @import '../../css/fonts.module.css';
 @import '../../css/reset.module.css';
-@import '../../css/global.css';
+@import '../../css/global.module.css';
 
 @value lg, mqMinLg from '../../css/mq.module.css';
-
-html {
-  font-family: 'Quattrocento Sans', sans-serif;
-  color: #fff;
-
-  background: #111;
-}
-
-a {
-  color: #a798d3;
-}
 
 .content {
   max-width: lg;

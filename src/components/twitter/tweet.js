@@ -1,11 +1,7 @@
 import React from 'react';
 
-// export default function Tweet({ html }) {
-//     return <div dangerouslySetInnerHTML={{ __html: html }}></div>;
-// };
-
+// set up queue of events to process when widgets.js loads
 window.twttr = { _e: [] };
-
 
 export default class Tweet extends React.Component {
     constructor(props) {
@@ -36,6 +32,6 @@ export default class Tweet extends React.Component {
     }
 
     render() {
-        return <div ref={this.myRef} ></div>;
+        return <div ref={this.myRef}></div>;
     }
 };

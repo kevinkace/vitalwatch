@@ -22,14 +22,14 @@ const IndexPage = () => (
     </div>
 
 
-    <div className={css.section} >
+    <div className={css.section} id='info'>
       <h2>What we Know</h2>
 
       <p>There's not a lot of public info about Vital, but here's what I've been able to put together from the Vital site, Twitter account, and Discord.</p>
 
       <br/>
 
-      <h3>Cost &amp; Content</h3>
+      <h3>Cost</h3>
       <ul>
         <li>literally 0 solid info</li>
         <li>currently not open-source</li>

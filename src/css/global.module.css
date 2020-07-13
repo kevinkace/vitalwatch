@@ -1,0 +1,61 @@
+/* paths are relative to layout.module.css, where this is imported */
+
+@value purple from '../../css/colors.module.css';
+
+html {
+    font-family: 'Quattrocento Sans', sans-serif;
+    color: #fff;
+
+    background: #111;
+}
+
+a {
+    color: purple;
+}
+
+h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+ul {
+    margin-bottom: 2em;
+}
+
+li {
+    margin-bottom: 0.3em;
+}
+
+button {
+    padding: 0.3em 1em;
+    cursor: pointer;
+
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-family: 'Quattrocento Sans', sans-serif;
+    border: none;
+    background-color: purple;
+
+    &:focus {
+        outline: solid 2px purple;
+
+    }
+}
+
+:global(.external):after {
+    content: '';
+    display: inline-block;
+    margin: 0 0 -0.1em 0.3em;
+
+    height: 0.8em;
+    width: 0.8em;
+
+    line-height: 1;
+    background: url(../../images/external.svg) no-repeat;
+}

@@ -11,5 +11,5 @@
 }
 
 .section {
-    composes: section from '../components/layout/index.module.css';
+    composes: section, bottomBorder from '../components/layout/index.module.css';
 }
