@@ -15,7 +15,7 @@ import css from './index.module.css';
 export default function Layout({ children }) {
 
   return (
-    <>
+    <div className={css.layout}>
       <Header siteTitle={'Vital Watch'} />
 
       <main className={css.content}>
@@ -27,6 +27,6 @@ export default function Layout({ children }) {
           Like or hate the site? Let me know: <ExtLink href="https://twitter.com/vitalwatchinfo">@vitalwatchinfo</ExtLink>
         </p>
       </footer>
-    </>
+    </div>
   )
 }

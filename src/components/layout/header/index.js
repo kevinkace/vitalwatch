@@ -6,7 +6,6 @@ import css from './index.module.css';
 import ExtLink from '../../extLink';
 
 import vitalWatchLogo from '../../../images/vitalWatch-logo.svg';
-import externalIcon from '../../../images/external.svg';
 
 const nav = [{
   label : "Info",
