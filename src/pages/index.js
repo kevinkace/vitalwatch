@@ -31,41 +31,51 @@ const IndexPage = () => (
 
       <br/>
 
-      <h3>Cost &amp; Release Info</h3>
-      <ul>
-        <li>literally 0 solid info</li>
-        <li>currently not open-source</li>
-        <li>unlikely to be free</li>
-        <li>may have purchasable content (patches, wavetables)</li>
-        <li>planned to be released 2020</li>
-      </ul>
+      <div className={css.details}>
 
-      <h3>Wavetables</h3>
-      <ul>
-        <li>import your own samples</li>
-        <li>create new wavetables with the built-in editor</li>
-        <li>warp existing wavetables into new ones</li>
-        <li>create wavetables from text</li>
-        <li>257 frames, but can also play between frames</li>
-      </ul>
+        <div>
+          <h3>Cost &amp; Release Info</h3>
+          <ul>
+            <li>literally 0 solid info</li>
+            <li>currently not open-source</li>
+            <li>unlikely to be free</li>
+            <li>may have purchasable content (patches, wavetables)</li>
+            <li>planned to be released 2020</li>
+          </ul>
+        </div>
 
-      <h3>Sound Engine</h3>
-      <ul>
-        <li>up to 8x oversampling</li>
-        <li>full stereo modulation</li>
-        <li>can be used as an insert fx</li>
-        <li>spectral oscillator warping</li>
-        <li>created with </li>
-      </ul>
+        <div>
+          <h3>Wavetables</h3>
+          <ul>
+            <li>import your own samples</li>
+            <li>create new wavetables with the built-in editor</li>
+            <li>warp existing wavetables into new ones</li>
+            <li>create wavetables from text</li>
+            <li>257 frames, but can also play between frames</li>
+          </ul>
+        </div>
 
-      <h3>UI and Visual</h3>
-      <ul>
-        <li>GPU optimized</li>
-        <li>60 FPS</li>
-        <li>graphics are vector based, not a sprite sheet</li>
-        <li>you may be able to customize colors, but won't be themeable in the same way that Serum is</li>
-      </ul>
+        <div>
+          <h3>Sound Engine</h3>
+          <ul>
+            <li>up to 8x oversampling</li>
+            <li>full stereo modulation</li>
+            <li>can be used as an insert fx</li>
+            <li>spectral oscillator warping</li>
+            <li>created with </li>
+          </ul>
+        </div>
 
+        <div>
+          <h3>UI and Visual</h3>
+          <ul>
+            <li>GPU optimized</li>
+            <li>60 FPS</li>
+            <li>graphics are vector based, not a sprite sheet</li>
+            <li>you may be able to customize colors, but won't be themeable in the same way that Serum is</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
   <Tweets initialNum={6}/>

@@ -1,3 +1,5 @@
+@value mqMinMd from '../css/mq.module.css';
+
 .intro {
     composes: bottomBorder from '../components/layout/index.module.css';
 
@@ -13,4 +15,12 @@
 
 .section {
     composes: bottomBorder from '../components/layout/index.module.css';
+}
+
+.details {
+    @media mqMinMd {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
 }
