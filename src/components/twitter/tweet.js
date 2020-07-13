@@ -1,10 +1,5 @@
 import React from 'react';
 
-// set up queue of events to process when widgets.js loads
-if (window) {
-    window.twttr = { _e: [] };
-}
-
 export default class Tweet extends React.Component {
     constructor(props) {
         super(props);

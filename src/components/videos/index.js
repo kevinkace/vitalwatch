@@ -5,7 +5,7 @@ import css from './index.module.css';
 import data from './data';
 
 function Video({ id }) {
-    return <iframe title={id} width='560' height='315' src={`https://www.youtube.com/embed/${id}`} frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>;
+    return <iframe title={id} width='560' height='315' src={`https://www.youtube.com/embed/${id}`} frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe>;
 }
 
 export default function Videos({ initialNum = 3 }) {

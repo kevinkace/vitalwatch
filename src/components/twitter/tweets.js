@@ -4,12 +4,15 @@ import css from './index.module.css';
 
 import data from './data';
 
+import TwttrQueue from './twttrQueue';
 import Tweet from './tweet';
 
 export default function Tweets({ initialNum = 3 }) {
     const [ toShow, setToShow ] = useState(initialNum);
 
     return <div className={css.section}>
+        <TwttrQueue/>
+
         <h2 id='tweets'>Tweets</h2>
 
         <div className={css.tweets}>
