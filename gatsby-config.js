@@ -1,3 +1,5 @@
+const tweets = require('./data/tweets');
+
 module.exports = {
   siteMetadata: {
     title       : `Vital Watch`,
@@ -28,6 +30,26 @@ module.exports = {
         icon             : `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve : 'gatsby-source-twitter',
+      options : {
+        queries: tweets.reduce((acc, { url, thread }, idx) => {
+            acc[idx] = {
+              endpoint : 'statuses/oembed',
+              params   : {
+                url,
+                omit_script : true,
+                theme       : 'dark',
+                maxwidth    : 400,
+                hide_thread : !thread,
+                dnt         : true
+              }
+            };
+
+            return acc;
+          }, {})
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

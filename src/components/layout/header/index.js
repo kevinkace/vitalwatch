@@ -8,13 +8,13 @@ import external from '../../../images/external.svg';
 
 const nav = [{
   label : "Info",
-  to    : "/info"
+  to    : "#info"
 }, {
-  label : "News",
-  to    : "/news"
-}, {
-  label : "Patches",
-  to    : '/patches'
+  label : "Tweets",
+  to    : '#tweets'
+// }, {
+//   label : "Patches",
+//   to    : '/patches'
 }, {
   label : "Official Website",
   to    : 'https://vital.audio',
@@ -26,15 +26,15 @@ export default function Header({ siteTitle }) {
     <div className={css.content}>
       <h1 className={css.logo}>
         <Link to='/'>
-          <img src={vitalWatchLogo} alt='Vital' />
+          <img src={vitalWatchLogo} alt='VitalWatch' />
         </Link>
       </h1>
 
       <nav className={css.nav}>
         {nav.map(({ label, to, icon }) =>
-          <Link to={to}>
+          <Link to={to} key={label}>
             {label}
-            {icon ? <img src={icon}/> : null}
+            {icon ? <img src={icon} alt='external'/> : null}
           </Link>
         )}
       </nav>

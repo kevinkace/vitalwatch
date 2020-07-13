@@ -4,8 +4,12 @@
     padding: 1em 0;
 
     font-size: 1.2em;
+
+    strong {
+        text-decoration: underline;
+    }
 }
 
 .section {
-    margin-bottom: 3em;
+    composes: section from '../components/layout/index.module.css';
 }
