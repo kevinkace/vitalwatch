@@ -70,7 +70,7 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
 
     >
-      <script async src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
+      <script async id='tweetjs' src='https://platform.twitter.com/widgets.js' charset='utf-8'></script>
     </Helmet>
   )
 }

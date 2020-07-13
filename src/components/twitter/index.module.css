@@ -1,19 +1,15 @@
+@value mqMinMd, mqMinLg from '../../css/mq.module.css';
+
 .section {
     composes: bottomBorder from '../../components/layout/index.module.css';
 }
 
 .tweets {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    composes: tiles from '../../components/layout/index.module.css';
 
     blockquote {
         margin: 0;
         padding: 0;
-    }
-
-    > * {
-        width: 32%;
     }
 }
 

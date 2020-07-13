@@ -38,7 +38,7 @@ export default function Header({ siteTitle }) {
       <nav className={css.nav}>
         {nav.map(({ label, to, external }) =>
           external ?
-          <ExtLink href={to} key={label}>{label} <img src={externalIcon} alt='external'/></ExtLink> :
+          <ExtLink href={to} key={label} className={css.external}>{label}</ExtLink> :
           <Link to={to} key={label}>
             {label}
           </Link>

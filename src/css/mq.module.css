@@ -1,3 +1,5 @@
 @value lg: 1400px;
+@value md: 800px;
 
 @value mqMinLg: screen and (min-width: lg);
+@value mqMinMd: screen and (min-width: md);

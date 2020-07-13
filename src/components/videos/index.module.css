@@ -3,17 +3,10 @@
 }
 
 .videos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    blockquote {
-        margin: 0;
-        padding: 0;
-    }
+    composes: tiles from '../../components/layout/index.module.css';
 
     > * {
-        width: 32%;
+        width: 100%;
         margin-bottom: 2em;
     }
 }
