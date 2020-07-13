@@ -2,6 +2,7 @@
     composes: bottomBorder from '../components/layout/index.module.css';
 
     padding: 1em 0;
+    margin-bottom: 3em;
 
     font-size: 1.2em;
 
@@ -11,5 +12,5 @@
 }
 
 .section {
-    composes: section, bottomBorder from '../components/layout/index.module.css';
+    composes: bottomBorder from '../components/layout/index.module.css';
 }

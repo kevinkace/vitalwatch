@@ -3,8 +3,10 @@ import React from 'react';
 
 import css from './index.module.css';
 
+import ExtLink from '../../extLink';
+
 import vitalWatchLogo from '../../../images/vitalWatch-logo.svg';
-import external from '../../../images/external.svg';
+import externalIcon from '../../../images/external.svg';
 
 const nav = [{
   label : "Info",
@@ -12,13 +14,16 @@ const nav = [{
 }, {
   label : "Tweets",
   to    : '#tweets'
+}, {
+  label : "Videos",
+  to    : '#videos'
 // }, {
 //   label : "Patches",
 //   to    : '/patches'
 }, {
-  label : "Official Website",
-  to    : 'https://vital.audio',
-  icon  : external
+  label    : "Official Website",
+  to       : 'https://vital.audio',
+  external : true
 }];
 
 export default function Header({ siteTitle }) {
@@ -31,10 +36,11 @@ export default function Header({ siteTitle }) {
       </h1>
 
       <nav className={css.nav}>
-        {nav.map(({ label, to, icon }) =>
+        {nav.map(({ label, to, external }) =>
+          external ?
+          <ExtLink href={to} key={label}>{label} <img src={externalIcon} alt='external'/></ExtLink> :
           <Link to={to} key={label}>
             {label}
-            {icon ? <img src={icon} alt='external'/> : null}
           </Link>
         )}
       </nav>

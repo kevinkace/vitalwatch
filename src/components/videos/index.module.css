@@ -1,8 +1,8 @@
 .section {
-    composes: bottomBorder from '../../components/layout/index.module.css';
+    composes: section from '../../components/layout/index.module.css';
 }
 
-.tweets {
+.videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -14,6 +14,7 @@
 
     > * {
         width: 32%;
+        margin-bottom: 2em;
     }
 }
 

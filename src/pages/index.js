@@ -5,19 +5,21 @@ import SEO from '../components/seo';
 
 import css from './index.module.css';
 import Tweets from '../components/twitter/tweets';
+import Videos from '../components/videos';
+import ExtLink from '../components/extLink';
 
-function ExLink({ href, children }) {
-  return <a href={href} target='_blank' rel='noreferrer'>{children}</a>;
-}
 
 const IndexPage = () => (
   <Layout>
     <SEO title='Home' />
 
     <div className={css.intro}>
-      <p>This is an <strong>unofficial</strong> fan site dedicated to Vital, an upcoming synth by Matt Tytel - the maker of <ExLink href='https://tytel.org/helm/'>Helm</ExLink>.</p>
-
-      <p>Official website <ExLink href='https://vital.audio'>vital.audio</ExLink>, Twitter <ExLink href='https://twitter.com/matttytel/'>@matttytel</ExLink>, <ExLink href='https://discord.gg/dpZxr98'>Discord</ExLink>, and <ExLink href='https://www.youtube.com/channel/UCB-pG-YPZmRHFQBNwk0qeDA'>YouTube</ExLink>.
+      <p>
+        An <strong>unofficial</strong> fan site dedicated to Vital, an upcoming synth by Matt Tytel - the maker of <ExtLink href='https://tytel.org/helm/'>Helm</ExtLink>.
+      </p>
+      <p>
+        If you're looking for leaked info, then you've come to the wrong place. <br/>
+        This is just a collection of the best publicly released info from <ExtLink href='https://discord.gg/dpZxr98'>Discord</ExtLink>, <ExtLink href='https://twitter.com/matttytel/'>Twitter</ExtLink>, <ExtLink href='https://www.youtube.com/channel/UCB-pG-YPZmRHFQBNwk0qeDA'>YouTube</ExtLink>, and the <ExtLink href='https://vital.audio'>official website</ExtLink>.
       </p>
     </div>
 
@@ -25,16 +27,17 @@ const IndexPage = () => (
     <div className={css.section} id='info'>
       <h2>What we Know</h2>
 
-      <p>There's not a lot of public info about Vital, but here's what I've been able to put together from the Vital site, Twitter account, and Discord.</p>
+      <p>There's not a lot of public info, but here's what I've been able to put together from the Vital site, Twitter account, and Discord.</p>
 
       <br/>
 
-      <h3>Cost</h3>
+      <h3>Cost &amp; Release Info</h3>
       <ul>
         <li>literally 0 solid info</li>
         <li>currently not open-source</li>
         <li>unlikely to be free</li>
         <li>may have purchasable content (patches, wavetables)</li>
+        <li>planned to be released 2020</li>
       </ul>
 
       <h3>Wavetables</h3>
@@ -52,6 +55,7 @@ const IndexPage = () => (
         <li>full stereo modulation</li>
         <li>can be used as an insert fx</li>
         <li>spectral oscillator warping</li>
+        <li>created with </li>
       </ul>
 
       <h3>UI and Visual</h3>
@@ -64,7 +68,9 @@ const IndexPage = () => (
 
     </div>
 
-    <Tweets max={6}/>
+  <Tweets initialNum={6}/>
+
+  <Videos initialNum={3}/>
 
   </Layout>
 )

@@ -8,6 +8,8 @@
 import React from 'react';
 
 import Header from './header';
+import ExtLink from '../extLink';
+
 import css from './index.module.css';
 
 export default function Layout({ children }) {
@@ -20,7 +22,11 @@ export default function Layout({ children }) {
         {children}
       </main>
 
-      <footer></footer>
+      <footer className={css.footer}>
+        <p className={css.content}>
+          Like or hate the site? Let me know: <ExtLink href="https://twitter.com/vitalwatchinfo">@vitalwatchinfo</ExtLink>
+        </p>
+      </footer>
     </>
   )
 }
