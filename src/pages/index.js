@@ -37,6 +37,7 @@ const IndexPage = () => (
           <h3>Cost &amp; Release Info</h3>
           <ul>
             <li>literally 0 solid info</li>
+            <li>no release date, though expected sometime in 2020</li>
             <li>currently not open-source</li>
             <li>unlikely to be free</li>
             <li>may have purchasable content (patches, wavetables)</li>
