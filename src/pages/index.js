@@ -77,6 +77,26 @@ const IndexPage = () => (
           </ul>
         </div>
       </div>
+
+      <div>
+        <h3>Beta</h3>
+        <ul>
+          <li>
+            there's currently quite a few beta testers, including some familiar names:
+            <ul className={css.flatList}>
+              <li>Ace Aura</li>
+              <li>Au5</li>
+              <li>Azazal</li>
+              <li>Derpcat</li>
+              <li>Fox Stevenson</li>
+              <li>IMANU</li>
+              <li>Inverted Silence</li>
+              <li>Slynk</li>
+            </ul>
+          </li>
+          <li>you can request to be added as <ExtLink href={'https://discord.com/channels/518489831232503809/638760293035409418'}>beta tester</ExtLink>, but not many are being added at this time</li>
+        </ul>
+      </div>
     </div>
 
   <Tweets initialNum={6}/>
