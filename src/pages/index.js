@@ -87,6 +87,7 @@ const IndexPage = () => (
               <li>Ace Aura</li>
               <li>Au5</li>
               <li>Azazal</li>
+              <li>BVSSIC</li>
               <li>Derpcat</li>
               <li>Fox Stevenson</li>
               <li>IMANU</li>
@@ -96,6 +97,8 @@ const IndexPage = () => (
               <li>Seamless</li>
               <li>Slynk</li>
               <li>The Living Tombstone</li>
+              <li>Woulg</li>
+              <li>Xtrullor</li>
             </ul>
           </li>
           <li>you can request to be added as <ExtLink href={'https://discord.com/channels/518489831232503809/638760293035409418'}>beta tester</ExtLink>, but not many are being added at this time</li>
