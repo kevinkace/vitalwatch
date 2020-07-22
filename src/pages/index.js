@@ -36,7 +36,8 @@ const IndexPage = () => (
         <div>
           <h3>Cost &amp; Release Info</h3>
           <ul>
-            <li>literally 0 solid info</li>
+            <li>very little concrete info</li>
+            <li><ExtLink href={'https://discord.com/channels/518489831232503809/518489831869906975/735581286604865556'}>"i can say it definitely will not be donationware"</ExtLink></li>
             <li>no release date, though expected sometime in 2020</li>
             <li>currently not open-source</li>
             <li>unlikely to be free</li>
@@ -88,7 +89,7 @@ const IndexPage = () => (
               <li>Au5</li>
               <li>Azazal</li>
               <li>BVSSIC</li>
-              <li>Derpcat</li>
+              {/* <li>Derpcat</li> */}
               <li>Fox Stevenson</li>
               <li>IMANU</li>
               <li>Inverted Silence</li>
