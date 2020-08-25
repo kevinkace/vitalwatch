@@ -7,7 +7,7 @@ import css from './index.module.css';
 import Tweets from '../components/twitter/tweets';
 import Videos from '../components/videos';
 import ExtLink from '../components/extLink';
-
+import { Video } from '../components/videos/Video';
 
 const IndexPage = () => (
   <Layout>
@@ -106,6 +106,8 @@ const IndexPage = () => (
         </ul>
       </div>
     </div>
+
+    <Video id={'5fdTlBVEx0g'}/>
 
   <Tweets initialNum={6}/>
 
