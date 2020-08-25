@@ -17,6 +17,11 @@
     composes: bottomBorder from '../components/layout/index.module.css';
 }
 
+.sonoj {
+    composes: section;
+    padding-bottom: 2em;
+}
+
 .details {
     @media mqMinMd {
         display: grid;

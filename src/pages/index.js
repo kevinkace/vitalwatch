@@ -107,11 +107,17 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <Video id={'5fdTlBVEx0g'}/>
+    <div className={css.sonoj}>
+      <h2>Vital Demo @ Sonoj 2019</h2>
 
-  <Tweets initialNum={6}/>
+      <p>Apparently Vital is much different than what's shown here (Nov 2019), but still worth watching for a glimpse at the work in progress.</p>
 
-  <Videos initialNum={3}/>
+      <Video id={'6LQs-R1ksww'} t={571}/>
+    </div>
+
+    <Tweets initialNum={6}/>
+
+    <Videos initialNum={3}/>
 
   </Layout>
 )
