@@ -61,7 +61,7 @@ const IndexPage = () => (
           <ul>
             <li>up to 8x oversampling</li>
             <li>full stereo modulation</li>
-            <li>can be used as an insert fx</li>
+            <li>future version will work as an insert fx (not V1)</li>
             <li>spectral oscillator warping</li>
             <li>created with <ExtLink href="https://juce.com/">Juce</ExtLink></li>
           </ul>
