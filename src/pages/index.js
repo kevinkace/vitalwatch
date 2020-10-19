@@ -42,7 +42,6 @@ const IndexPage = () => (
             <li>currently not open-source</li>
             <li>unlikely to be free</li>
             <li>may have purchasable content (patches, wavetables)</li>
-            <li>planned to be released 2020</li>
           </ul>
         </div>
 
@@ -64,7 +63,7 @@ const IndexPage = () => (
             <li>full stereo modulation</li>
             <li>can be used as an insert fx</li>
             <li>spectral oscillator warping</li>
-            <li>created with </li>
+            <li>created with <ExtLink href="https://juce.com/">Juce</ExtLink></li>
           </ul>
         </div>
 
