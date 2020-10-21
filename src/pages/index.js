@@ -101,7 +101,7 @@ const IndexPage = () => (
               <li>Xtrullor</li>
             </ul>
           </li>
-          <li>you can request to be added as <ExtLink href={'https://discord.com/channels/518489831232503809/638760293035409418'}>beta tester</ExtLink>, but not many are being added at this time</li>
+          <li>beta channel is closed <em className={css.strike}>you can request to be added as <ExtLink href={'https://discord.com/channels/518489831232503809/638760293035409418'}>beta tester</ExtLink>, but not many are being added at this time</em></li>
         </ul>
       </div>
     </div>
