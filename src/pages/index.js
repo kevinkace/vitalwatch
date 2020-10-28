@@ -53,6 +53,7 @@ const IndexPage = () => (
             <li>warp existing wavetables into new ones</li>
             <li>create wavetables from text</li>
             <li>257 frames, but can also play between frames</li>
+            <li><ExtLink href={'https://www.youtube.com/watch?v=Mwrj9Zaz2Xo'}>text to wavetables</ExtLink>, with multiple lang support</li>
           </ul>
         </div>
 
