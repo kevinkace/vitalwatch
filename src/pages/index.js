@@ -9,6 +9,8 @@ import Videos from '../components/videos';
 import ExtLink from '../components/extLink';
 import { Video } from '../components/videos/Video';
 
+import screenshot from "../images/screenshot.png";
+
 const IndexPage = () => (
   <Layout>
     <SEO title='Home' />
@@ -25,23 +27,60 @@ const IndexPage = () => (
 
 
     <div className={css.section} id='info'>
-      <h2>What we Know</h2>
+      <h2>Release Date: November 24, 2020!</h2>
 
-      <p>There's not a lot of public info, but here's what I've been able to put together from the Vital site, Twitter account, and Discord.</p>
+      <img src={screenshot} alt='screenshot of vital synth' />
 
       <br/>
 
       <div className={css.details}>
 
-        <div>
+        <div className={css.cost}>
           <h3>Cost &amp; Release Info</h3>
-          <ul>
-            <li>very little concrete info</li>
-            <li><ExtLink href={'https://discord.com/channels/518489831232503809/518489831869906975/735581286604865556'}>"i can say it definitely will not be donationware"</ExtLink></li>
-            <li>no release date, though expected sometime in 2020</li>
-            <li>currently not open-source</li>
-            <li>unlikely to be free</li>
-            <li>may have purchasable content (patches, wavetables)</li>
+          <ul className={css.prices}>
+            <li>
+              <strong>Basic - Free</strong>
+
+              <ul>
+                <li>80 presets</li>
+                <li>25 wavetables</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Plus - $25</strong>
+
+              <ul>
+                <li>250 presets</li>
+                <li>70 wavetables</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Pro - $80</strong>
+
+              <ul>
+                <li>400+ presets</li>
+                <li>150 wavetables</li>
+                <li>Unlimited text-to-wavetable</li>
+                <li>Exclusive Discord perk</li>
+                <li>Developer support</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Subscribe - $5 / month</strong>
+
+              <ul>
+                <li>$5 / month credit in store</li>
+                <li>Subscriber-only preset bank</li>
+                <li>Unlimited text-to-wavetable</li>
+                <li>Exclusive Discord perk</li>
+                <li>Developer support</li>
+                <li>First access to new features</li>
+                <li>First access to new plugins</li>
+              </ul>
+            </li>
           </ul>
         </div>
 
@@ -81,6 +120,7 @@ const IndexPage = () => (
 
       <div>
         <h3>Beta</h3>
+        <p><strong>Beta is closed!</strong> Go buy the synth on November 24 at <ExtLink href='https://vital.audio'>vital.audio</ExtLink></p>
         <ul>
           <li>
             there's currently quite a few beta testers, including some familiar names:
